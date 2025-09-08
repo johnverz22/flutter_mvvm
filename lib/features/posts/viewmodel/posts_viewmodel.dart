@@ -44,3 +44,22 @@ final postsViewModelProvider =
  * AsyncValue.data(value) → success with value
  * AsyncValue.error(err, stack) → error happened
  */
+
+
+/**
+AsyncNotifiver Vs. StateNotifier:
+
+StateNotifier
+Manages any kind of state (synchronous or async).
+You manually define what state looks like and update it yourself.
+Simple state like counters, toggles, filters.
+Complex synchronous logic.
+When you want full control over how you represent state.
+
+AsyncNotifier
+Designed specifically for async data (like API calls).
+Built around AsyncValue<T> (loading, error, data).
+Saves you from writing boilerplate for async handling.
+Loading data from APIs.
+Caching / refreshing.
+Anything where async calls are central.
